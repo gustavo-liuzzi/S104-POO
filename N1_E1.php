@@ -28,3 +28,5 @@ Prueba de instanciado y función
 $persona1 = new Empleado("Juan", 30000);
 $persona1->print();
 */
+
+?>
