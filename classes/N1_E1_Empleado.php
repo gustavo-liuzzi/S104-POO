@@ -6,7 +6,6 @@ class Empleado
     private string $nombre;
     private int $sueldo;
 
-    //asumo que en el enunciado del ejercicio "initialize" se refiere al constructor
     public function __construct(string $nombre, int $sueldo)
     {
         $this->nombre = $nombre;
