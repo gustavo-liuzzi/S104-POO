@@ -1,18 +1,19 @@
 <?php
+declare(strict_types=1);
 
 class Empleado
 {
-    private $nombre;
-    private $sueldo;
+    private string $nombre;
+    private int $sueldo;
 
     //asumo que en el enunciado del ejercicio "initialize" se refiere al constructor
-    public function __construct($nombre, $sueldo)
+    public function __construct(string $nombre, int $sueldo)
     {
         $this->nombre = $nombre;
         $this->sueldo = $sueldo;
     }
 
-    public function print()
+    public function print(): void
     {
         echo $this->nombre . " ";
         if ($this->sueldo > 6000) {
@@ -22,11 +23,3 @@ class Empleado
         }
     }
 }
-
-/*
-Prueba de instanciado y función
-$persona1 = new Empleado("Juan", 30000);
-$persona1->print();
-*/
-
-?>
